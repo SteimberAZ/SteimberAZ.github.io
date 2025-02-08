@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer juego</title>
+    <link rel="stylesheet" href="stylowwww.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <script src="javas.js"></script>
+
+    <div class="menu">
+        <button id="abrir" onclick="Abrir()">MENU</button>
+        <button id="borrar" onclick="borrar()">BORRAR</button>
+        <button id="salir" onclick="SALIR()">SALIR</button>
+
+        <div id="lowmenu">
+            <button id="black" onclick="negro()"></button>
+            <button id="blanco" onclick="blanco()"></button>
+            <button id="rojo" onclick="rojo()"></button>
+            <button id="amarillo" onclick="amarillo()"></button>
+            <button id="azul" onclick="azul()"></button>
+            <button id="verde" onclick="verde()"></button>
+        </div>
+    </div>
+
+    <div class="border">
+        <div id="Madre" onclick="Seleccionar()"></div>
+    </div>
+
+    <div class="Game">
+        <div class="Imagen">
+            <div id="GO">?</div>
+            <img src="Goldapple.jpg" id="GAMES1">
+            <img src="casco-di.png" id="GAMES2">
+        </div>
+        <button class="ini" onclick="Contador(event)">INICIAR</button>
+        <div id="aumentador">60</div>
+    </div>
+</body>
+</html>
