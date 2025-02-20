@@ -1,13 +1,13 @@
-
 var negro1 = false;
 var blanco1 = false;
 var rojo1 = false;
 var amarillo1 = false;
 var azul1 = false;
 var verde1 = false;
-let aumente = 0; // Inicializamos la variable fuera de la función
+let aumente = 0; 
 var piel = false;
 var color =  true;
+var imagen_actual = false;
 document.addEventListener("DOMContentLoaded" ,function(){
         let contenedor = document.getElementById("Madre");
         for(let i = 0; i< 256;i++){
@@ -31,19 +31,20 @@ document.addEventListener("DOMContentLoaded" ,function(){
 
 
 function Contador(event) {
+
     let boton = event.target;
-    boton.style.fontSize = "40px"; // Cambiar tamaño de fuente al hacer click
+    document.getElementById("audio").play();
+    boton.style.fontSize = "40px"; 
 
     setTimeout(() => {
         boton.style.transition = "all 0.3s ease-in-out";
-        boton.style.fontSize = "50px"; // Vuelve a su tamaño original después de 1 segundo
+        boton.style.fontSize = "50px"; 
     }, 1000);
 
     // Ocultar el GO
     let gono = document.getElementById("GO");
     gono.style.opacity = "0";
 
-    // Obtener las imágenes y restablecerlas al inicio
     let gameu1 = document.getElementById("GAMES1");
     let gameu2 = document.getElementById("GAMES2");
     let gameu3 = document.getElementById("GAMES3");
@@ -84,17 +85,16 @@ function Contador(event) {
         gameu5.style.filter = "blur(35px)";
     }
 
-    let i = 59; // Comienza el contador en 60
+    let i = 59; 
     let interval = setInterval(() => {
         let elementos = document.getElementById("aumentador");
         elementos.textContent = i;
         i--;
 
         if (i < 0) {
-            clearInterval(interval); // Detener el contador cuando llega a 0
-            elementos.textContent = "¡TIEMPO!"; // Mostrar "¡TIEMPO!"
+            clearInterval(interval); 
+            elementos.textContent = "¡TIEMPO!"; 
 
-            // Eliminar el blur de la imagen activa según "aumente"
             if (aumente === 0) {
                 gameu1.style.filter = "blur(0px)";
             } else if (aumente === 1) {
@@ -110,14 +110,15 @@ function Contador(event) {
                 gameu5.style.filter = "blur(0px)";
             }  
 
-            // Alternar el valor de "aumente" entre 0 y 1 para cambiar de imagen
-            aumente = (aumente + 1) ; // Cambiar entre 0 y 1
+            
+            aumente = (aumente + 1) ; 
         }
-    }, 1000); // Se actualiza cada 1 segundo
+    }, 1000); 
 }
 
 function Abrir(){
     var boton = event.target;
+    document.getElementById("audio").play();
     boton.style.fontSize = "30px";
     setTimeout(() => {
         boton.style.fontSize = "40px";
@@ -130,10 +131,37 @@ function Abrir(){
     ex.style.opacity = "1";
     var uwu = document.getElementById("borrar");
     uwu.style.display = "None";
-
+    var aldeo = document.getElementById("alde");
+    aldeo.style.display = "None";
+  
 }
+function aldeos(){
+    document.getElementById("audi").play();
+    var boton = event.target;
+    boton.style.width = "430px";
+    boton.style.height = "230px";
+    boton.style.transition = "all 0.2s ease-in-out";
+    setTimeout(() => {
+        boton.style.width = "500px";
+        boton.style.height = "500px";
+        
+    }, 100);
+    
+    boton2 = document.getElementById("adei");
+    if (imagen_actual){
+        boton2.src = "aldeo1.png";
+        
+    } else{
+        boton2.src = "aldeo2.png";
+        
+    }
+    imagen_actual = !imagen_actual;
+}
+
+
 function SALIR(){
     var boton = event.target;
+    document.getElementById("audio").play();
     boton.style.fontSize = "30px";
     setTimeout(() => {
         boton.style.fontSize = "40px";
@@ -146,10 +174,14 @@ function SALIR(){
     ex.style.display = "Flex";
     var uwu = document.getElementById("borrar");
     uwu.style.display = "Flex";
+    var aldeo = document.getElementById("alde");
+    aldeo.style.display = "Block";
+    
 
 }
 function borrar(){
     var boton = event.target;
+    document.getElementById("audio").play();
     boton.style.fontSize = "30px";
     setTimeout(() => {
         boton.style.transition = "all 0.3s ease-in-out"
@@ -205,7 +237,7 @@ function Seleccionar() {
 }
 function seli1(){
     var salu = event.target;
-    
+    document.getElementById("audio").play();
     salu.style.transform = "translateY(-1000px)";
 
     salu.style.transition = "all 1s ease-in-out";
@@ -218,7 +250,8 @@ function negro() {
         
     boton.style.width = "80px";
     boton.style.height = "80px";
-    boton.style.transition = "all 0.3s ease-in-out"
+    boton.style.transition = "all 0.3s ease-in-out";
+    document.getElementById("audio").play();
     setTimeout(() => {
         
         
@@ -239,7 +272,8 @@ function blanco() {
     var boton = event.target;
     boton.style.width = "80px";
     boton.style.height = "80px";
-    boton.style.transition = "all 0.3s ease-in-out"
+    boton.style.transition = "all 0.3s ease-in-out";
+    document.getElementById("audio").play();
     setTimeout(() => {
         
         boton.style.width = "100px";
@@ -258,7 +292,8 @@ function rojo() {
     var boton = event.target;
     boton.style.width = "80px";
     boton.style.height = "80px";
-    boton.style.transition = "all 0.3s ease-in-out"
+    boton.style.transition = "all 0.3s ease-in-out";
+    document.getElementById("audio").play();
     setTimeout(() => {
         
         boton.style.width = "100px";
@@ -277,7 +312,8 @@ function amarillo() {
     var boton = event.target;
     boton.style.width = "80px";
     boton.style.height = "80px";
-    boton.style.transition = "all 0.3s ease-in-out"
+    boton.style.transition = "all 0.3s ease-in-out";
+    document.getElementById("audio").play();
     setTimeout(() => {
         
         boton.style.width = "100px";
@@ -296,7 +332,8 @@ function azul() {
     var boton = event.target;
     boton.style.width = "80px";
     boton.style.height = "80px";
-    boton.style.transition = "all 0.3s ease-in-out"
+    boton.style.transition = "all 0.3s ease-in-out";
+    document.getElementById("audio").play();
     setTimeout(() => {
         
         boton.style.width = "100px";
@@ -315,7 +352,8 @@ function verde() {
     var boton = event.target;
     boton.style.width = "80px";
     boton.style.height = "80px";
-    boton.style.transition = "all 0.3s ease-in-out"
+    boton.style.transition = "all 0.3s ease-in-out";
+    document.getElementById("audio").play();
     setTimeout(() => {
         
         boton.style.width = "100px";
@@ -334,7 +372,8 @@ function piel1() {
     var boton = event.target;
     boton.style.width = "80px";
     boton.style.height = "80px";
-    boton.style.transition = "all 0.3s ease-in-out"
+    boton.style.transition = "all 0.3s ease-in-out";
+    document.getElementById("audio").play();
     setTimeout(() => {
         
         boton.style.width = "100px";
@@ -354,6 +393,7 @@ function color1() {
     boton.style.width = "80px";
     boton.style.height = "80px";
     boton.style.transition = "all 0.3s ease-in-out"
+    document.getElementById("audio").play();
     setTimeout(() => {
         
         boton.style.width = "100px";
@@ -368,4 +408,7 @@ function color1() {
     negro1 = false;
     color = true;
 }  
+function au(){
+    document.getElementById("audio").play();
+}
 
