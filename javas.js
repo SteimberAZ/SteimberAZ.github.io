@@ -83,7 +83,7 @@ function Contador(event) {
         gameu5.style.filter = "blur(35px)";
     }
 
-    let i = 3; // Comienza el contador en 60
+    let i = 59; // Comienza el contador en 60
     let interval = setInterval(() => {
         let elementos = document.getElementById("aumentador");
         elementos.textContent = i;
