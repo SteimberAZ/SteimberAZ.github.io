@@ -212,6 +212,14 @@ function seli1(){
 }
 
 function negro() {
+    var boton = event.target;
+    boton.style.width = "80px";
+    boton.style.height = "80px";
+    setTimeout(() => {
+        boton.style.transition = "all 0.3s ease-in-out"
+        boton.style.width = "100px";
+        boton.style.height = "100px";
+    }, 100);
     negro1 = true;
     blanco1 = false;
     rojo1 = false;
@@ -222,6 +230,14 @@ function negro() {
     color = false;
 }
 function blanco() {
+    var boton = event.target;
+    boton.style.width = "80px";
+    boton.style.height = "80px";
+    setTimeout(() => {
+        boton.style.transition = "all 0.3s ease-in-out"
+        boton.style.width = "100px";
+        boton.style.height = "100px";
+    }, 100);
     blanco1 = true;
     negro1 = false;
     rojo1 = false;
@@ -232,6 +248,14 @@ function blanco() {
     color = false;
 }  
 function rojo() {
+    var boton = event.target;
+    boton.style.width = "80px";
+    boton.style.height = "80px";
+    setTimeout(() => {
+        boton.style.transition = "all 0.3s ease-in-out"
+        boton.style.width = "100px";
+        boton.style.height = "100px";
+    }, 100);
     rojo1 = true;
     blanco1 = false;
     negro1 = false;
@@ -242,6 +266,14 @@ function rojo() {
     color = false;
 }  
 function amarillo() {
+    var boton = event.target;
+    boton.style.width = "80px";
+    boton.style.height = "80px";
+    setTimeout(() => {
+        boton.style.transition = "all 0.3s ease-in-out"
+        boton.style.width = "100px";
+        boton.style.height = "100px";
+    }, 100);
     amarillo1 = true;
     blanco1 = false;
     rojo1 = false;
@@ -252,6 +284,14 @@ function amarillo() {
     color = false;
 }  
 function azul() {
+    var boton = event.target;
+    boton.style.width = "80px";
+    boton.style.height = "80px";
+    setTimeout(() => {
+        boton.style.transition = "all 0.3s ease-in-out"
+        boton.style.width = "100px";
+        boton.style.height = "100px";
+    }, 100);
     azul1 = true;
     blanco1 = false;
     rojo1 = false;
@@ -262,6 +302,14 @@ function azul() {
     piel = false;
 }  
 function verde() {
+    var boton = event.target;
+    boton.style.width = "80px";
+    boton.style.height = "80px";
+    setTimeout(() => {
+        boton.style.transition = "all 0.3s ease-in-out"
+        boton.style.width = "100px";
+        boton.style.height = "100px";
+    }, 100);
     verde1 = true;
     azul1 = false;
     blanco1 = false;
@@ -272,6 +320,14 @@ function verde() {
     color = false;
 } 
 function piel1() {
+    var boton = event.target;
+    boton.style.width = "80px";
+    boton.style.height = "80px";
+    setTimeout(() => {
+        boton.style.transition = "all 0.3s ease-in-out"
+        boton.style.width = "100px";
+        boton.style.height = "100px";
+    }, 100);
     verde1 = false;
     azul1 = false;
     blanco1 = false;
@@ -282,6 +338,14 @@ function piel1() {
     color = false;
 }  
 function color1() {
+    var boton = event.target;
+    boton.style.width = "80px";
+    boton.style.height = "80px";
+    setTimeout(() => {
+        boton.style.transition = "all 0.3s ease-in-out"
+        boton.style.width = "100px";
+        boton.style.height = "100px";
+    }, 100);
     verde1 = false;
     azul1 = false;
     blanco1 = false;
