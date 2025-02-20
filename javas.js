@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded" ,function(){
         var input = document.getElementById("color");
         var boton2 = document.getElementById("color1");
         input.addEventListener("input",()=>{
+        boton2.style.transition = "all 0.01s ease-in-out"
         boton2.style.backgroundColor = input.value ||"transparent";
         
     });
@@ -213,10 +214,15 @@ function seli1(){
 
 function negro() {
     var boton = event.target;
+    
+        
     boton.style.width = "80px";
     boton.style.height = "80px";
+    boton.style.transition = "all 0.3s ease-in-out"
     setTimeout(() => {
-        boton.style.transition = "all 0.3s ease-in-out"
+        
+        
+        
         boton.style.width = "100px";
         boton.style.height = "100px";
     }, 100);
@@ -233,8 +239,9 @@ function blanco() {
     var boton = event.target;
     boton.style.width = "80px";
     boton.style.height = "80px";
+    boton.style.transition = "all 0.3s ease-in-out"
     setTimeout(() => {
-        boton.style.transition = "all 0.3s ease-in-out"
+        
         boton.style.width = "100px";
         boton.style.height = "100px";
     }, 100);
@@ -251,8 +258,9 @@ function rojo() {
     var boton = event.target;
     boton.style.width = "80px";
     boton.style.height = "80px";
+    boton.style.transition = "all 0.3s ease-in-out"
     setTimeout(() => {
-        boton.style.transition = "all 0.3s ease-in-out"
+        
         boton.style.width = "100px";
         boton.style.height = "100px";
     }, 100);
@@ -269,8 +277,9 @@ function amarillo() {
     var boton = event.target;
     boton.style.width = "80px";
     boton.style.height = "80px";
+    boton.style.transition = "all 0.3s ease-in-out"
     setTimeout(() => {
-        boton.style.transition = "all 0.3s ease-in-out"
+        
         boton.style.width = "100px";
         boton.style.height = "100px";
     }, 100);
@@ -287,8 +296,9 @@ function azul() {
     var boton = event.target;
     boton.style.width = "80px";
     boton.style.height = "80px";
+    boton.style.transition = "all 0.3s ease-in-out"
     setTimeout(() => {
-        boton.style.transition = "all 0.3s ease-in-out"
+        
         boton.style.width = "100px";
         boton.style.height = "100px";
     }, 100);
@@ -305,8 +315,9 @@ function verde() {
     var boton = event.target;
     boton.style.width = "80px";
     boton.style.height = "80px";
+    boton.style.transition = "all 0.3s ease-in-out"
     setTimeout(() => {
-        boton.style.transition = "all 0.3s ease-in-out"
+        
         boton.style.width = "100px";
         boton.style.height = "100px";
     }, 100);
@@ -323,8 +334,9 @@ function piel1() {
     var boton = event.target;
     boton.style.width = "80px";
     boton.style.height = "80px";
+    boton.style.transition = "all 0.3s ease-in-out"
     setTimeout(() => {
-        boton.style.transition = "all 0.3s ease-in-out"
+        
         boton.style.width = "100px";
         boton.style.height = "100px";
     }, 100);
@@ -341,8 +353,9 @@ function color1() {
     var boton = event.target;
     boton.style.width = "80px";
     boton.style.height = "80px";
+    boton.style.transition = "all 0.3s ease-in-out"
     setTimeout(() => {
-        boton.style.transition = "all 0.3s ease-in-out"
+        
         boton.style.width = "100px";
         boton.style.height = "100px";
     }, 100);
