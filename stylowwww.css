@@ -3,6 +3,21 @@
     font-family: "Press Start 2P", cursive !important;
 }
 
+/* Para pantallas menores a 768px (tablets y celulares) */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    margin: 10px;
+  }
+}
+
+/* Para pantallas menores a 480px (celulares pequeños) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+    margin: 5px;
+  }
+}
 #lowmenu button{
     width: 100px;
     height: 100px;
