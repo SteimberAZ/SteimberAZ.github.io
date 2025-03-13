@@ -1,0 +1,666 @@
+
+body{
+    background-color: rgb(132, 247, 232);
+    display: grid;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    margin: 0px;
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#Oso{
+    display: none;
+    
+    justify-items: center;
+    align-items: center;
+    background-color: transparent;
+    
+    font-size: 50px;
+    width: fit-content;
+    height: fit-content;
+    top: 0;
+    color: white;
+    gap: 5px; 
+}
+
+
+.lista{
+    background-color: rgb(127, 255, 212);
+    border-radius: 30px;
+    border-color: rgb(7, 223, 151);
+    border-style: solid;
+    border-width: 15px;
+    position: absolute;
+    display: none;
+    place-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    background-color:rgb(127, 255, 212);
+    border-radius: 35px;
+    top : 650px;
+    
+}
+
+#derecha{
+    background-color: rgb(127, 255, 212);
+    border-radius: 30px;
+    border-color: rgb(7, 223, 151);
+    border-style: solid;
+    border-width: 15px;
+    position: fixed;
+    display: none;
+    place-items: center;
+    justify-content: center;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+    background-color: rgb(127, 255, 212);
+    border-radius: 35px;
+    top : 660px;
+    left: 70%;
+}
+
+
+#derecha img{
+    width: auto;
+    height: 150px;
+}
+
+#izquierda{
+    background-color: rgb(127, 255, 212);
+    border-radius: 30px;
+    border-color: rgb(7, 223, 151);
+    border-style: solid;
+    border-width: 15px;
+    position: absolute;
+    display: none;
+    place-items: center;
+    justify-content: center;
+    width: auto;
+    height: fit-content;
+    background-color:  rgb(127, 255, 212);
+    border-radius: 35px;
+    top : 660px;    
+    right: 70%;
+    padding: 10px;
+}
+
+#izquierda img{
+    width: auto;
+    height: 150px;
+}
+
+#Dragable1{
+    
+    margin: 25px;
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+}
+#Dragable1 img{
+
+    width: 150px;
+    height: 150px;
+}
+
+#Dragable2{
+    margin: 25px;
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+}
+
+#Dragable2 img{
+
+    width: 150px;
+    height: 150px;
+}
+
+#Dragable3{
+    margin: 25px;
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+}
+
+#Dragable3 img{
+
+    width: 150px;
+    height: 150px;
+}
+
+#Dropzone{
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    position: absolute;
+    margin-bottom: 100px;
+}
+
+
+.entrada {
+    display: grid;
+    position: absolute;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(132, 247, 232);
+    font-size: 50px;
+    
+    top: 0;
+    color: white;
+    gap: 5px; 
+}
+
+#objetos{
+    padding: 50px;
+    display: grid;
+    width: fit-content;
+    height: fit-content;
+    gap: 25px;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(127, 255, 212);
+    border-radius: 30px;
+    border-color: rgb(7, 223, 151);
+    border-style: solid;
+    border-width: 15px;
+}
+#name-pet-text, #name-text {
+    margin: 0;
+    padding: 0;
+}
+
+#name-pet, #name {
+    width: 600px; 
+    height: 80px; 
+    margin: 0;
+    padding: 10px; 
+    font-size: 40px; 
+    outline: none;
+    border: none;
+    border-radius: 30px; 
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+#boton-ini {
+    width: 300px;
+    height: 70px;
+    font-size: 30px;
+    background-color: white;
+    color:rgb(127, 255, 212);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    outline: none;
+    
+}
+
+#Nombre{
+    background-color: rgb(127, 255, 212);
+    border-radius: 30px;
+    border-color: rgb(7, 223, 151);
+    border-style: solid;
+    border-width: 10px;
+    font-size: 50px;
+    color: white;
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top:5px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+}
+
+#error{
+    width: fit-content; 
+    height: fit-content; 
+    margin: 0;
+    padding: 10px; 
+    font-size: 20px; 
+    outline: none;
+    border: none;
+    display: none;
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+#Nombre-p{
+    display: flex;
+    background-color: rgb(127, 255, 212);
+    border-radius: 100px;
+    border-color: rgb(7, 223, 151);
+    border-style: solid;
+    border-width: 10px;
+    font-size: 50px;
+    color: white;
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top:5px;
+    left: 5%;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    width: 130px;
+    height: 130px;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+}
+#Nombre-p img{
+    
+    width: 100px;
+    height: 100px;
+    
+}
+#nano{
+    display: flex;
+    background-color: rgb(127, 255, 212);
+    border-radius: 30px;
+    border-color: rgb(7, 223, 151);
+    border-style: solid;
+    border-width: 10px;
+    font-size: 50px;
+    color: white;
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top:40px;
+    left: 15%;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    left: 200px;
+    
+}
+.other{
+    display: none;
+    position: absolute;
+    top:0%;
+    left: 5%;
+}
+
+#indicar{
+    display: none;
+}
+
+#hambre{
+    display: grid;
+    color: white;
+    font-size: 30px;
+    font-family: "Titan One", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    width: 120px;
+    height: 500px;
+    right: 20%;
+    position: absolute;
+    text-align: center;
+    top:10%;
+    padding: 5px;
+    justify-content: center;
+}
+
+#hambre progress{
+    transform: rotate(-90deg);
+    width: 500px;
+    height: 100px;
+    position: relative;
+    top: -134px;
+    overflow: hidden;
+    background-color: antiquewhite;
+    border: 10px solid   rgb(7, 223, 151);
+    border-radius: 100px;
+}
+
+#primera::-webkit-progress-bar {
+    background-color: #ffffff; 
+    border-radius: 10px;
+}
+
+
+#primera.alto1::-webkit-progress-value {
+    background-color: rgb(131, 253, 168);
+    border-radius: 100px;
+}
+
+#primera.media1::-webkit-progress-value {
+    background-color: rgb(253, 196, 131);
+    border-radius: 100px;
+}
+#primera.low1::-webkit-progress-value {
+    background-color: rgb(253, 131, 131);
+    border-radius: 100px;
+}
+
+#hambre h1{
+    transform: rotate(-90deg);
+    width: 400px;
+    height: 150px;
+    position: relative;
+    top: 140px;
+    right: 0px;
+}
+
+#dormir{
+    display: grid;
+    color: white;
+    font-size: 30px;
+    font-family: "Titan One", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    width: 120px;
+    height: 500px;
+    right: 10%;
+    position: absolute;
+    text-align: center;
+    top:10%;
+    padding: 5px;
+    justify-content: center;
+}
+#dormir progress{
+    transform: rotate(-90deg);
+    width: 500px;
+    height: 100px;
+    position: relative;
+    top: -134px;
+    overflow: hidden;
+    background-color: antiquewhite;
+    border: 10px solid   rgb(7, 223, 151);
+    border-radius: 100px;
+}
+#segunda::-webkit-progress-bar {
+    background-color: #ffffff; 
+    border-radius: 10px;
+}
+
+
+#segunda.alto2::-webkit-progress-value {
+    background-color: rgb(131, 174, 253);
+    border-radius: 100px;
+}
+
+#segunda.media2::-webkit-progress-value {
+    background-color: rgb(52, 110, 219);
+    border-radius: 100px;
+}
+#segunda.low2::-webkit-progress-value {
+    background-color: rgb(18, 83, 204);
+    border-radius: 100px;
+}
+
+#dormir h1{
+    transform: rotate(-90deg);
+    width: 400px;
+    height: 150px;
+    position: relative;
+    top: 140px;
+    right: 0px;
+}
+#dormir-b{
+    display: flex;
+    background-color: rgb(127, 255, 212);
+    border-radius: 30px;
+    border-color: rgb(7, 223, 151);
+    border-style: solid;
+    border-width: 10px;
+    font-size: 50px;
+    color: white;
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top:100px;
+    
+    width: 250px;
+    height: 100px;
+    padding: 10px;;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+   
+
+}
+#light{
+    display: flex;
+    background-color: red;
+    border-radius: 100px;
+    border-color: rgb(7, 223, 151);
+    border-style: solid;
+    border-width: 10px;
+    font-size: 50px;
+    color: white;
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+    top:20px;
+    
+    width: 50px;
+    height: 20px;
+    padding: 10px;;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    left: 260px;
+}
+#shop-b{
+    display: flex;
+    background-color: rgb(127, 255, 212);
+    border-radius: 30px;
+    border-color: rgb(7, 223, 151);
+    border-style: solid;
+    border-width: 10px;
+    font-size: 50px;
+    color: white;
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+   
+    top:50px;
+    
+    width: 250px;
+    height: 100px;
+    padding: 10px;;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+#coins{
+    display: flex;
+    background-color: rgb(127, 255, 212);
+    border-radius: 30px;
+    border-color: rgb(7, 223, 151);
+    border-style: solid;
+    border-width: 10px;
+    font-size: 50px;
+    color: white;
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+   
+    top:60px;
+    
+    width: fit-content;
+    height: 100px;
+    padding: 10px;;
+    justify-content: left;
+    align-items: left;
+    text-align: center;
+    position: relative;
+}
+
+.tienda{
+    display: none;
+    position: absolute;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(127, 255, 212,0.8);
+    font-size: 50px;
+    top: 0;
+    color: white;
+    
+}
+#inner-tienda{
+    display: flex;
+    padding: 50px;
+    width: 1000px;
+    height: fit-content;
+    background-color: rgb(127, 255, 212);
+    border-radius: 30px;
+    border-color: rgb(7, 223, 151);
+    border-style: solid;
+    border-width: 15px;
+    overflow-x: auto;
+    white-space: nowrap;
+    
+}
+#item-1, #item-2{
+    display: grid;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(255, 0, 0,0.5);
+    border-radius: 30px;
+    border-color: rgb(136, 9, 9);
+    border-style: solid;
+    border-width: 15px;
+    padding: 15px;
+    place-items: center;
+    margin: 10px;
+}
+
+#compra-1 ,#compra-2 , #compra-3 {
+    display: flex;
+    background-color: rgb(127, 255, 212);
+    border-radius: 30px;
+    border-color: rgb(7, 223, 151);
+    border-style: solid;
+    border-width: 10px;
+    font-size: 50px;
+    color: white;
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: fit-content;
+    height: 100px;
+    text-align: center;
+    place-items: center;
+}
+#compra-1 img , #compra-2 img , #compra-3 img{
+    width: 80px;
+    height: 80px;
+}
+#item-3{
+    display: grid;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(0, 174, 255, 0.5);
+    border-radius: 30px;
+    border-color: rgb(6, 116, 167);
+    border-style: solid;
+    border-width: 15px;
+    padding: 15px;
+    place-items: center;
+    margin: 10px;
+}
+#inner-tienda::-webkit-scrollbar {
+    height: 25px; /* Altura de la barra */
+    
+}
+
+/* 🎨 Color del fondo del scrollbar */
+#inner-tienda::-webkit-scrollbar-track {
+    background: rgb(127, 255, 212);
+    border-radius: 10px;
+}
+
+/* 🎨 Color del "thumb" (la parte que se mueve) */
+#inner-tienda::-webkit-scrollbar-thumb {
+    background: white;/* Azul */
+    border-radius: 10px;
+}
+
+/* 🎨 Hover sobre el scrollbar */
+#inner-tienda::-webkit-scrollbar-thumb:hover {
+    background: rgb(223, 223, 223); /* Azul oscuro */
+}
+#cerrar{
+    display: flex;
+    background-color: rgb(127, 255, 212);
+    border-radius: 30px;
+    border-color: rgb(7, 223, 151);
+    border-style: solid;
+    border-width: 10px;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    height: 100px;
+    padding: 5px;
+    
+    position: absolute;
+    top :8%;
+    right:20.5%;
+    padding: 10px;
+}
+#coins2{
+    display: flex;
+    background-color: rgb(127, 255, 212);
+    border-radius: 30px;
+    border-color: rgb(7, 223, 151);
+    border-style: solid;
+    border-width: 10px;
+    font-size: 50px;
+    color: white;
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+   
+    top:60px;
+    
+    width: fit-content;
+    height: 100px;
+    padding: 10px;;
+    justify-content: left;
+    align-items: left;
+    text-align: center;
+    position: relative;
+    position: absolute;
+    top :8%;
+    left:20.5%;
+    padding: 10px;
+}
