@@ -330,7 +330,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if(value2 <=30){
                 document.querySelector("#primera").classList.remove("media1");
                 document.querySelector("#primera").classList.add("low1");
-                if(Notification.permission === "granted" && ori === true){
+                if(Notification.permission === "granted" && ori === true && confirmdead === false){
                     var title = " ¡EMERGENCIA!";
                     const body = input_per.value + ", tu querido " + input_ani.value + " ¡Está muy hambriento! 🐻🥺";
     
@@ -393,7 +393,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if(value3 <=30){
                 document.querySelector("#segunda").classList.remove("media2");
                 document.querySelector("#segunda").classList.add("low2");
-                if(Notification.permission === "granted" && ori2 === true){
+                if(Notification.permission === "granted" && ori2 === true && confirmdead === false){
                     var title = " ¡EMERGENCIA!";
                     const body = input_per.value + ", tu querido " + input_ani.value + " ¡Está con mucho sueño! 🐻🥺";
     
@@ -546,3 +546,4 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 });
+
